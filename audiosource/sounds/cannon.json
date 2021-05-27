@@ -1,0 +1,7 @@
+{
+    "audio": {
+        "shoot": {
+            "url": "./audio/cannon.ogg"
+        }
+    }
+}

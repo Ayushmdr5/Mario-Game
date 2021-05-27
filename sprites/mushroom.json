@@ -1,0 +1,9 @@
+{
+    "imageURL": "image/tileset.png",
+    "frames":[
+        {
+            "name": "mushroom",
+            "rect": [257, 0, 14, 14]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "audio": {
+    "jump": {
+      "url": "./audio/jump.ogg"
+    },
+    "mushroomspawn": {
+      "url": "./audio/mushroomspawn.ogg"
+    },
+    "stomp": {
+      "url": "./audio/stomp.ogg"
+    },
+    "powerdown": {
+      "url": "./audio/powerdown.ogg"
+    },
+    "coin": {
+      "url": "./audio/coin.ogg"
+    },
+    "brickdestroy": {
+      "url": "./audio/brickdestroy.ogg"
+    },
+    "checkpoint": {
+      "url": "./audio/checkpoint.ogg"
+    },
+    "die": {
+      "url": "./audio/die.ogg"
+    },
+    "eatmushroom": {
+      "url": "./audio/eatmushroom.ogg"
+    }
+  }
+}

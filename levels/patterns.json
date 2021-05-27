@@ -1,0 +1,113 @@
+{
+  "cloud-single": {
+    "tiles": [
+      {
+        "name": "cloud-1-1",
+        "ranges": [[0, 1, 0, 1]]
+      },
+      {
+        "name": "cloud-1-2",
+        "ranges": [[1, 1, 0, 1]]
+      },
+      {
+        "name": "cloud-1-3",
+        "ranges": [[2, 1, 0, 1]]
+      },
+      {
+        "name": "cloud-2-1",
+        "ranges": [[0, 1, 1, 1]]
+      },
+      {
+        "name": "cloud-2-2",
+        "ranges": [[1, 1, 1, 1]]
+      },
+      {
+        "name": "cloud-2-3",
+        "ranges": [[2, 1, 1, 1]]
+      }
+    ]
+  },
+  "pipe-2h": {
+    "tiles": [
+      {
+        "name": "pipe-insert-vert-left",
+        "type": "ground",
+        "ranges": [[0, 1, 0, 1]]
+      },
+      {
+        "name": "pipe-insert-vert-right",
+        "type": "ground",
+        "ranges": [[1, 1, 0, 1]]
+      },
+      {
+        "pattern": "pipe-vert",
+        "ranges": [
+          [0, 1, 1, 1],
+          [0, 1, 1, 1]
+        ]
+      }
+    ]
+  },
+  "pipe-3h": {
+    "tiles": [
+      {
+        "name": "pipe-insert-vert-left",
+        "type": "ground",
+        "ranges": [[0, 1, 0, 1]]
+      },
+      {
+        "name": "pipe-insert-vert-right",
+        "type": "ground",
+        "ranges": [[1, 1, 0, 1]]
+      },
+      {
+        "pattern": "pipe-vert",
+        "ranges": [
+          [0, 1, 1, 1],
+          [0, 1, 2, 1]
+        ]
+      }
+    ]
+  },
+  "pipe-vert": {
+    "tiles": [
+      {
+        "name": "pipe-vert-left",
+        "type": "ground",
+        "ranges": [[0, 1, 0, 1]]
+      },
+      {
+        "name": "pipe-vert-right",
+        "type": "ground",
+        "ranges": [[1, 1, 0, 1]]
+      }
+    ]
+  },
+  "cannon-2h": {
+    "tiles": [
+      {
+        "name": "cannon-1",
+        "type": "ground",
+        "ranges": [[0, 1, 0, 1]]
+      },
+      {
+        "name": "cannon-3",
+        "type": "ground",
+        "ranges": [[0, 1, 1, 1]]
+      }
+    ]
+  },
+  "checkpoint":{
+    "tiles":[
+      {
+        "name": "checkpoint-1",
+        "ranges": [[0, 1, 0, 1]]
+      }
+      ,
+      {
+        "name": "checkpoint-2",
+        "ranges": [[0, 1, 1, 8]]
+      }
+    ]
+  }
+}
