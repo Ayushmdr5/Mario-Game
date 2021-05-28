@@ -76,7 +76,6 @@ async function main(canvas) {
     displayChanger.runNext();
     shoudlUpdate = true;
 
-    console.log(level.events);
   }
 
   const gameContext = {

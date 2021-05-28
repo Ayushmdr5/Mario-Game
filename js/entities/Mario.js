@@ -9,19 +9,6 @@ import { loadAudioBoard } from "../loaders/audio.js";
 import Powerup from '../characteristics/Powerup.js'
 
 
-// class Fall extends Characteristic {
-//   constructor(mario) {
-//     super("fall");
-//     this.mario = mario
-//   }
-
-//   update(){
-//     // console.log(this.mario)
-//     // console.log(this)
-//     // console.log('hi')
-//   }
-// }
-
 export const loadMario = (audioContext) => {
 
   return Promise.all([loadSpriteSheet("mario"), 
@@ -72,10 +59,7 @@ function createMarioFactory(sprite, audio) {
     
     mario.killable.removeAfter = 2.5
 
-    console.log(mario)
-
     mario.draw = function drawMario(context) {
-      // called in drawSpriteLayer which is called by level.comp everytime
       sprite.draw(routeFrame(this), context, 0, 0, mario.move.heading < 0);
     };
 

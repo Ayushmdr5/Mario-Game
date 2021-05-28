@@ -9,7 +9,6 @@ function getPlayerCharacteristic(level){
 function getTimerCharacteristic(level){
   for (const entity of level.entites){
     if(entity.levelTimer){
-      // console.log('time ',entity.levelTimer)
       return entity.levelTimer
     }
   }

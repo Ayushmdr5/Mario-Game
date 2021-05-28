@@ -31,7 +31,6 @@ export default class TileCollider {
         entity.bounds.bottom
       ); // contains all tile property (eg [{name: 'ground'}, ..]) array corresponding to mario's all tile
 
-      // console.log(this.handle)
       matches.forEach((match) => {
         this.handle(0, entity, match, resolver, gameContext, level);
       });
@@ -48,7 +47,6 @@ export default class TileCollider {
       ); // contains all tile property (eg [{name: 'ground'}, ..]) array corresponding to mario's all tile
 
       matches.forEach((match) => {
-        // console.log(match.tile)
         this.handle(1, entity, match, resolver, gameContext, level);
       });
     }
@@ -66,7 +64,6 @@ export default class TileCollider {
       level,
     };
     const handler = handlers[match.tile.type];
-    // console.log(handler)
     if (handler) {
       handler[index](tileCollisionContext);
     }

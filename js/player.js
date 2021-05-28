@@ -19,7 +19,6 @@ export function createPlayerEnv(playerEntity) {
 
 export function* findPlayers(level) {
   for (const entity of level.entites) {
-    // console.log('entiteis ', entity)
     if (entity.player) {
       yield entity;
     }

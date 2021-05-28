@@ -15,8 +15,6 @@ class Behavior extends Characteristic {
       return;
     }
     if (them.stomper) {
-      console.log(them)
-
       if (them.vel.y > us.vel.y + 25) {
         us.killable.kill();
         us.vel.set(100, -200)

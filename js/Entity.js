@@ -54,7 +54,6 @@ export default class Entity {
   }
 
   collides(candidate) {
-    // console.log(this.charateristics)
     this.charateristics.forEach((charateristic) => {
       charateristic.collides(this, candidate);
     });

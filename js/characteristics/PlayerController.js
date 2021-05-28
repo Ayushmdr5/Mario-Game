@@ -6,23 +6,10 @@ export default class PlayerController extends Characteristic {
     super("playerController");
     this.player = null;
     this.checkpoint = new Vec2(0, 0);
-    // this.score = 0;
-    // this.time = 500;
-
-  //   this.listen('stomp', () => {
-  //     this.score += 100
-  //   })
   }
 
   setPlayer(entity) {
     this.player = entity;
-    // this.player.stomper.onStomp = () => {
-    //   this.score += 100
-    // }
-    // console.log(this.player.stomper.events)
-    // this.player.stomper.events.listen("stomp", () => {
-    //   this.score += 100;
-    // });
   }
 
   update(entity, { deltaTime }, level) {
@@ -31,8 +18,5 @@ export default class PlayerController extends Characteristic {
         this.player.pos.set(this.checkpoint.x, this.checkpoint.y);
         level.entites.add(this.player);
     } 
-    // else {
-    //   this.time -= deltaTime;
-    // }
   }
 }

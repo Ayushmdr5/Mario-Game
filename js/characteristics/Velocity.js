@@ -8,7 +8,5 @@ export default class Physics extends Characteristic {
     entity.pos.x += entity.vel.x * deltaTime;
 
     entity.pos.y += entity.vel.y * deltaTime;
-
-    // console.log(entity, deltaTime, level)
   }
 }

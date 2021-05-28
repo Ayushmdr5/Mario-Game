@@ -13,7 +13,6 @@ export default class Physics extends Characteristic {
     level.tileCollider.checkY(entity, gameContext, level);
 
     entity.vel.y += level.gravity * deltaTime;
-    // console.log(entity, deltaTime, level)
 
     if (entity.player) {
       if (entity.player.lives === 0) {

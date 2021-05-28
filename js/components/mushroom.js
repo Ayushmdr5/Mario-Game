@@ -26,9 +26,6 @@ function handleX({ entity, match, resolver, gameContext, level }) {
       if (match.tile.name === "mushroom") {
           const mushroom = gameContext.entityFactory.mushroom()
           mushroom.vel.set(-10, -100)
-          console.log(match.x1, match.y1)
-          console.log(match.x2, match.y2)
-          console.log(entity.pos.x,entity.pos.y)
           mushroom.pos.set(match.x1, match.y1-24)
           level.entites.add(mushroom)
         match.tile.name = "mushroom-inactive";

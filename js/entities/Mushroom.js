@@ -17,7 +17,6 @@ class Behavior extends Characteristic {
       us.killable.kill();
       them.sounds.add('eatmushroom')
 
-      console.log(them);
     }
   }
 }

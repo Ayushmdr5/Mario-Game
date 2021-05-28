@@ -9,7 +9,6 @@ export default class Player extends Characteristic {
 
     this.listen('stomp', () => {
       this.score += 100
-      console.log('score', this.score)
     })
   }
 

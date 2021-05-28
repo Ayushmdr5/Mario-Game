@@ -67,9 +67,9 @@ function setupTriggers(levelSpec, level) {
     entity.trigger.conditions.push((entity, touches, gc, level) => {
       level.events.emit("trigger", triggerSpec, entity, touches);
     });
-    entity.size.set(64, 64)
-    entity.pos.set(triggerSpec.pos[0], triggerSpec.pos[1])
-    level.entites.add(entity)
+    entity.size.set(64, 64);
+    entity.pos.set(triggerSpec.pos[0], triggerSpec.pos[1]);
+    level.entites.add(entity);
   }
 }
 
@@ -129,7 +129,7 @@ function* expandSpan(xStart, xLen, yStart, yLen) {
 function expandRange(range) {
   if (range.length === 4) {
     const [xStart, xLen, yStart, yLen] = range;
-    return expandSpan(xStart, xLen, yStart, yLen); // expandSpan creates generator
+    return expandSpan(xStart, xLen, yStart, yLen);
   } else if (range.length === 2) {
     const [xStart, yStart] = range;
     return expandSpan(xStart, 1, yStart, 1);
@@ -168,28 +168,3 @@ function expandTiles(tiles, patterns) {
   walkTiles(tiles, 0, 0);
   return expandedTiles;
 }
-//       }
-//     });
-//   });
-// };
-
-// tiles.forEach((tile) => {
-//   tile.ranges.forEach(([xStart, xLen, yStart, yLen]) => {
-//41
-// for (let x = xStart; x < xEnd; x++) {
-//   for (let y = yStart; y < yEnd; y++) {
-//     const derivedX = x + offsetX
-//     const derivedY = y + offsetY
-
-//     if (tile.pattern) {
-//       const tiles = patterns[tile.pattern].tiles
-//       console.log(derivedX, derivedY)
-//       createTiles(level, tiles, patterns, derivedX, derivedY)
-//     } else {
-//       level.tiles.set(derivedX, derivedY, {
-//         name: tile.name,
-//         type: tile.type,
-//       });
-//     }
-//   }
-// }
