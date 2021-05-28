@@ -3,7 +3,6 @@ export default class BoundingBox {
   constructor(pos, size) {
     this.pos = pos;
     this.size = size;
-    // this.offset = offset;
   }
 
   overlaps(candidate) {

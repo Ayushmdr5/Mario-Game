@@ -55,7 +55,6 @@ function createMarioFactory(sprite, audio) {
     mario.addCharacteristic(new Killable())
     mario.addCharacteristic(new Physics())
     mario.addCharacteristic(new Powerup())
-    // mario.addCharacteristic(new Fall(mario))
     
     mario.killable.removeAfter = 2.5
 

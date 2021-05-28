@@ -2,7 +2,6 @@ import { loadJSON, loadImage } from "../loader.js";
 import SpriteSheet from "../../js/spriteSheet.js";
 import { createAnimation } from "../../js/animation.js";
 
-// creates canvas for each tile name in sprites (eg: mario, overworld)
 export const loadSpriteSheet = (name) => {
   return loadJSON(`sprites/${name}.json`)
     .then((sheetSpec) =>

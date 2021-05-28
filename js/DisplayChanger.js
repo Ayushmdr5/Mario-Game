@@ -18,19 +18,10 @@ export default class DisplayChanger {
       }
     this.displayIndex++;
   }
-  
-  // restart(){
-  //   const currentDisplay = this.displays[0]
-  //     if(currentDisplay){
-  //         currentDisplay.pause()
-  //     }
-  //   this.displayIndex++;
-  // }
+
 
   update(gameContext) {
-    // if(mario.player.lives === 2){
-    //   this.restart()
-    // }
+
     const currentDisplay = this.displays[this.displayIndex];
     if (currentDisplay) {
       currentDisplay.update(gameContext);

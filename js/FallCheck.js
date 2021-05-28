@@ -11,9 +11,7 @@ export default class FallCheck{
                     candidate.killable.kill()
                 }
             }
-            // if(subject.bounds.overlaps(candidate.bounds)){
-            //     subject.collides(candidate)
-            // }
+
         })
     }
 }

@@ -5,8 +5,6 @@ export default class Stomper extends Characteristic {
     super("stomper");
     this.queueBounce = false;
     this.bounceSpeed = 400;
-
-    // this.onStomp = function () {}
   }
   bounce(us, them){
       us.bounds.bottom = them.bounds.top;
@@ -21,7 +19,6 @@ export default class Stomper extends Characteristic {
       this.queue(() => this.bounce(us, them))
       us.sounds.add('stomp')
       us.events.emit('stomp', us, them)
-      // this.onStomp()
     }
   }
 }

@@ -33,7 +33,6 @@ function createMushroomFactory(sprite) {
   return function createMushroom() {
     const mushroom = new Entity();
     mushroom.size.set(16, 14);
-    // mushroom.vel.x = -20;
 
     mushroom.addCharacteristic(new Physics());
     mushroom.addCharacteristic(new KGwalk());

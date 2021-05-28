@@ -5,7 +5,7 @@ export const createSpriteLayer = (entities, width = 64, heigth = 64) => {
     spriteBuffer.height = heigth;
     const spriteBufferContext = spriteBuffer.getContext("2d");
   
-    return function drawSpriteLayer(context, display) {   // called in index (by compositor)
+    return function drawSpriteLayer(context, display) {   
       entities.forEach((entity) => {
         spriteBufferContext.clearRect(0, 0, width, heigth);
         entity.draw(spriteBufferContext);

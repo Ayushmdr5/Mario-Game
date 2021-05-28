@@ -9,7 +9,6 @@ export default class Trigger extends Characteristic {
 
   collides(us, them) {
       this.touches.add(them)
-      // them.sounds.add('checkpoint')
   }
 
   update(entity, gameContext, level) {

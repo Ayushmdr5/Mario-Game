@@ -89,7 +89,6 @@ export function createLevelLoader(entityFactory) {
         level.name = name;
         level.music.setPlayer(musicPlayer);
 
-        // setupCollision(levelSpec, level);
         setupBackground(levelSpec, level, backgroundSprites, patterns);
         setupEntities(levelSpec, level, entityFactory);
         setupTriggers(levelSpec, level);
@@ -99,14 +98,6 @@ export function createLevelLoader(entityFactory) {
       });
   };
 }
-
-// function createGrid(tiles, patterns) {
-//   const grid = new Matrix();
-//   for (const { tile, x, y } of expandTiles(tiles, patterns)) {
-//     grid.set(x, y, tile);
-//   }
-//   return grid;
-// }
 
 function createGrid(tiles, patterns) {
   const grid = new Matrix();

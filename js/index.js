@@ -1,6 +1,5 @@
 import { createLevelLoader } from "../js/loaders/level.js";
 import Timer from "../js/Timer.js";
-import Display from "../js/display.js";
 import { setupKeyboard } from "../js/input.js";
 import { loadEntities } from "../js/entities.js";
 import { loadFont } from "../js/loaders/font.js";
@@ -95,7 +94,7 @@ async function main(canvas) {
   };
 
   timer.start();
-  runLevel("5");
+  runLevel("1");
 }
 
 const canvas = document.getElementById("canvas");

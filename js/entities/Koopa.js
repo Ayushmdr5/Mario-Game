@@ -54,7 +54,6 @@ class Behavior extends Characteristic {
     if (this.state == STATE_WALKING) {
       this.hide(us);
     } else if (this.state === STATE_HIDING) {
-      // us.vel.x = 500
       us.kgwalk.speed = 210;
       us.vel.set(200, -200);
     } else if (this.state === STATE_PANIC) {
