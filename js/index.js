@@ -96,7 +96,7 @@ async function main(canvas) {
   };
 
   timer.start();
-  runLevel("1");
+  runLevel("5");
 }
 
 const canvas = document.getElementById("canvas");
